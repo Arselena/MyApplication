@@ -35,5 +35,4 @@
         android:background="#3F51B5"
         app:layout_constraintTop_toTopOf="parent">
     </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
