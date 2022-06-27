@@ -5,34 +5,117 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/button_menu"
+        android:id="@+id/TopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/post_1"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/post_2"/>
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/post_3"/>
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/post_4"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/disclaimer"
+        android:autoLink="web"
+        android:linksClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopMenu" />
+
+    <LinearLayout
+        android:id="@+id/buttonsMenu"
         android:layout_width="300dp"
-        android:layout_height="500dp"
-        android:background="#009688"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comer_background"
         android:orientation="vertical"
 
-        app:layout_constraintStart_toStartOf="@+id/Top_menu"
-        app:layout_constraintEnd_toEndOf="@+id/Bottom_menu"
+        app:layout_constraintStart_toStartOf="@+id/TopMenu"
+        app:layout_constraintEnd_toEndOf="@+id/bottomMenu"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintVertical_chainStyle="spread">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/button_menu"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/button_favorites"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/button_watchLater"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/button_selections"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/button_settings"/>
 
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/Bottom_menu"
+        android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent">
     </FrameLayout>
 
-    <FrameLayout
-        android:id="@+id/Top_menu"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#3F51B5"
-        app:layout_constraintTop_toTopOf="parent">
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
