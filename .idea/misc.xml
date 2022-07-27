@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
-        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/comer_background.xml" value="0.1225" />
-        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/comer_background.xml" value="0.164" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_favorite.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.111" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_settings.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_video_library.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_watch_later.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.14912280701754385" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu_main.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/menu/navigation_menu.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/menu/toolbar_menu.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/menu/top_app_bar.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -22,4 +22,11 @@
     <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#9C27B0</item>
+        <item name="colorAccent">#FFEB3B</item>
+    </style>
+
 </resources>
