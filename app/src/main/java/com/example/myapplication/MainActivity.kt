@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.watch_later -> {
-                    Toast.makeText(this, "Посмотреть похже", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.selections -> {
