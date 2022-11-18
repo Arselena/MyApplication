@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
-import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 
 
@@ -15,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //initBottoms()
-
+        //initBottons()
         binding.topAppBar.setNavigationOnClickListener {
             Toast.makeText(this, "Когда-нибудь здесь будет навигация...", Toast.LENGTH_SHORT).show()
         }
@@ -32,14 +30,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.bottomNavigation.setOnItemSelectedListener {
-
             when (it.itemId) {
                 R.id.favorites -> {
                     Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.watch_later -> {
-                    Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Посмотреть похже", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.selections -> {
@@ -49,6 +46,34 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
+        init()
     }
+
+    private fun init() {
+        //Запускаем фрагмент при старте
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragment_placeholder, HomeFragment())
+            .addToBackStack(null)
+            .commit()
+    }
+
+    fun launchDetailsFragment(film: Film) {
+        //Создаем "посылку"
+        val bundle = Bundle()
+        //Кладем наш фильм в "посылку"
+        bundle.putParcelable("film", film)
+        //Кладем фрагмент с деталями в перменную
+        val fragment = DetailsFragment()
+        //Прикрепляем нашу "посылку" к фрагменту
+        fragment.arguments = bundle
+
+        //Запускаем фрагмент
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_placeholder, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
+
 }
