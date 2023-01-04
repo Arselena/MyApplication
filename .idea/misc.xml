@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/background_search_view.xml" value="0.1" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/comer_background.xml" value="0.164" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_favorite.xml" value="0.1" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.111" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.1" />
+        <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
         <entry key="..\:/Users/salsa/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_settings.xml" value="0.1" />
