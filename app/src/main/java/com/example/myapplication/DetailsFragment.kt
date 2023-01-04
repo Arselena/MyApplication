@@ -11,6 +11,7 @@ class DetailsFragment : Fragment() {
     //private lateinit var binding: FragmentDetailsBinding
     private var _binding: FragmentDetailsBinding? = null
     private val binding get() = _binding!! // !! без проверки на null
+    private val FILM = arguments?.get("film") as Film
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,14 +30,14 @@ class DetailsFragment : Fragment() {
 
     private fun setFilmsDetails() {
         //Получаем наш фильм из переданного бандла
-        val film = arguments?.get("film") as Film
+        //val film = arguments?.get("film") as Film
 
         //Устанавливаем заголовок
-        binding.detailsToolbar.title = film.title
+        binding.detailsToolbar.title = FILM.title
         //Устанавливаем картинку
-        binding.detailsPoster.setImageResource(film.poster)
+        binding.detailsPoster.setImageResource(FILM.poster)
         //Устанавливаем описание
-        binding.detailsDescription.text = film.description
+        binding.detailsDescription.text = FILM.description
     }
 
     override fun onDestroy() {
